@@ -1,0 +1,223 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Ibarra Real Nova', serif;
+    background-color: rgba(1,10,19,0.95);
+}
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.952);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.contenedor {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor img {
+    width: 80px;
+}
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu a:hover {
+    background-color: white;
+    border-radius: 10px;
+    color: red;
+}
+.contenedor a{
+    text-decoration: none;
+    display: block;
+    margin: auto 10px;
+    padding: 7px;
+    color: white;
+    font-size: 13pt;
+}
+section {
+    width: 100%;
+}
+#banner {
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 30px; 
+}
+#banner img {
+    width: 100%;
+    height: 300px;
+    vertical-align: bottom;
+}
+#banner .contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    text-align: center;
+}
+#banner h1 {
+    font-size: 50pt;
+}
+#banner h2 {
+    font-size: 15pt;
+}
+#banner h1, h2 {
+    color: #fff;
+}
+#lore {
+    width: 80%;
+    margin: 40px auto;
+    background-color: #082848;
+    color: #fff;
+    padding: 8px; 
+}
+#lore p {
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 11.5pt;
+    margin-bottom: 15px;
+}
+#habilidades {
+    width: 80%;
+    margin: 40px auto;
+    background-color: #082848;
+    color: #fff;
+    padding: 8px; 
+}
+.hab #habg {
+    float: left;
+}
+#habilidades p {
+    text-align: justify;
+    font-size: 11.5pt;
+    margin-left: 80px;
+    margin-bottom: 10px;
+}
+h4 {
+    font-size: 10pt;
+}
+#habilidades h2,h3,h4 {
+    margin: 10px 0;
+    color: #9797fc;
+}
+.habi {
+    width: 80%;
+    border-bottom: 1px solid #fff;
+    margin: 0 auto;
+}
+.ico {
+    margin-right: 3px;
+    
+}
+#skins {
+    width: 80%;
+    margin: 40px auto;
+    background-color: #082848;
+    color: #fff;
+    padding: 8px; 
+}
+#skins #container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#skins img {
+    width: 100%;
+    max-width: 350px;
+}
+#skins article {
+    margin: 17px;
+    border: .3px solid #fdfdfd;
+    position: relative;
+}
+h5 {
+    position: absolute;
+    font-size: 17pt;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    display: block;
+    text-align: center;
+    width: 70%;
+}
+footer {
+    color: white;
+    width: 100%;
+    margin: auto;
+    background: #13406d;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14pt;
+}
+
+@media (min-width:768px) {
+    #banner h1 {
+        font-size: 90pt;
+    }
+    #banner h2 {
+        font-size: 30pt;
+    }
+    #banner img {
+        display: block;
+        margin: auto;
+        height: 350px;
+        width: 763px;
+    }
+    #skins {
+        width: 763px;
+    }
+    #skins img {
+        width: 300px;
+    }
+    #container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .habi {
+        width: 763px;
+    }
+    #habilidades {
+        width: 763px;
+    }
+    #lore {
+        width: 763px;
+    }
+}
+@media (min-width:1024px) {
+    #banner h1 {
+        font-size: 150pt;
+    }
+    #banner h2 {
+        font-size: 80pt;
+    }
+    #banner img {
+        display: block;
+        margin: auto;
+        height: 650px;
+        width: 1400px;
+    }
+    #skins {
+        width: 1400px;
+    }
+    .habi {
+        width: 1400px;
+    }
+    #habilidades {
+        width: 1400px;
+    }
+    #lore {
+        width: 1400px;
+    }
+}
